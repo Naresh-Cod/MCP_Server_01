@@ -1,0 +1,43 @@
+{
+    "mcpServers": {
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
+        },
+        "airbnb": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@openbnb/mcp-server-airbnb"
+            ]
+        },
+        "duckduckgo-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "duckduckgo-mcp-server"
+            ]
+        },
+        "time": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-time",
+                "--local-timezone=UTC"
+            ]
+        },
+        "mcpServers": {
+            "mcp-server-firecrawl": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "firecrawl-mcp"
+                ],
+                "env": {
+                    "FIRECRAWL_API_KEY": "fc-35f97193f4384b0f86a94f883a433c2a"
+                }
+            }
+        }
+    }
+}
